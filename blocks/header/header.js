@@ -165,3 +165,12 @@ export default async function decorate(block) {
     block.append(navWrapper);
   }
 }
+
+$("li").hover(
+  function () {
+    $(this).addClass("result_hover");
+  },
+  function () {
+    $(this).removeClass("result_hover");
+  }
+);
