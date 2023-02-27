@@ -87,6 +87,7 @@ header nav .nav-hamburger-icon::after {
   width: 20px;
 }
 
+
 header nav .nav-hamburger-icon::before,
 header nav .nav-hamburger-icon::after {
   content: '';
@@ -272,4 +273,15 @@ header nav .nav-sections ul > li > ul > li {
 /* tools */
 header nav .nav-tools {
   grid-area: tools;
+}
+
+
+
+.nav-wrapper::before {
+  content: "";
+  border-bottom: 8px solid #c4c4c4;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
 }
