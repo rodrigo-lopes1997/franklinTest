@@ -307,4 +307,13 @@ li:hover{
 #nav{
   min-height: 100px;
 }
+
+.nav-brand{
+  display: none;
+}
+
+img{
+  width: 188.25px;
+  height: 77.6px;
+}
     
