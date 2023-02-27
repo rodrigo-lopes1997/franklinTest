@@ -23,6 +23,7 @@ function closeOnEscape(e) {
 }
 
 function openOnKeydown(e) {
+  console.log("HOVERsds");
   const focused = document.activeElement;
   const isNavDrop = focused.className === "nav-drop";
   if (isNavDrop && (e.code === "Enter" || e.code === "Space")) {
@@ -31,20 +32,10 @@ function openOnKeydown(e) {
     toggleAllNavSections(focused.closest(".nav-sections"));
     focused.setAttribute("aria-expanded", dropExpanded ? "false" : "true");
   }
-
-  $("li").hover(function (event) {
-    console.log("HOVERsds");
-    event.preventDefault();
-    if ($focused.attr("aria-expanded") == "true") {
-      $focused.attr("aria-expanded", "false");
-      return;
-    }
-    $focused.attr("aria-expanded", "true");
-  });
 }
 
 function focusNavSection() {
-  document.activeElement.addEventListener("hover", openOnKeydown);
+  document.activeElement.addEventListener("mouseover", openOnKeydown);
 }
 
 /**
