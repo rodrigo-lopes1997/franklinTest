@@ -167,6 +167,7 @@ export default async function decorate(block) {
 }
 
 $("li").hover(
+  console.log("HOVER"),
   function () {
     $(this).addClass("result_hover");
   },
