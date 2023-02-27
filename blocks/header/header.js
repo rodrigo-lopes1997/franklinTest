@@ -24,15 +24,22 @@ function closeOnEscape(e) {
 
 function openOnKeydown(e) {
   const focused = document.activeElement;
-  const focused2 = "li".hover();
   const isNavDrop = focused.className === "nav-drop";
   if (isNavDrop && (e.code === "Enter" || e.code === "Space")) {
     const dropExpanded = focused.getAttribute("aria-expanded") === "true";
     // eslint-disable-next-line no-use-before-define
     toggleAllNavSections(focused.closest(".nav-sections"));
-
-    focused2.setAttribute("aria-expanded", dropExpanded ? "false" : "true");
+    focused.setAttribute("aria-expanded", dropExpanded ? "false" : "true");
   }
+
+  $("li").hover(function (event) {
+    event.preventDefault();
+    if ($focused.attr("aria-expanded") == "true") {
+      $focused.attr("aria-expanded", "false");
+      return;
+    }
+    $focused.attr("aria-expanded", "true");
+  });
 }
 
 function focusNavSection() {
