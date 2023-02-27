@@ -296,8 +296,10 @@ ul{
 
 li{
   height: 100%;
+  width: 100px;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 li:hover{
