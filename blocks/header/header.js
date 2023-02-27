@@ -33,6 +33,7 @@ function openOnKeydown(e) {
   }
 
   $("li").hover(function (event) {
+    console.log("HOVERsds");
     event.preventDefault();
     if ($focused.attr("aria-expanded") == "true") {
       $focused.attr("aria-expanded", "false");
