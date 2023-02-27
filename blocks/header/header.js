@@ -142,15 +142,6 @@ export default async function decorate(block) {
         });
       });
     }
-    $("li").hover(
-      console.log("HOVER"),
-      function () {
-        $(this).addClass("result_hover");
-      },
-      function () {
-        $(this).removeClass("result_hover");
-      }
-    );
 
     // hamburger for mobile
     const hamburger = document.createElement("div");
