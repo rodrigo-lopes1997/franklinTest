@@ -208,7 +208,7 @@ header nav .nav-sections ul > li > ul > li {
     content: '';
     display: inline-block;
     position: absolute;
-    top: .5em;
+    top: 45%;
     right: 2px;
     transform: rotate(135deg);
     width: 6px;
@@ -296,11 +296,15 @@ ul{
 
 li{
   height: 100%;
+  display: flex;
+  align-items: center;
 }
-
 
 li:hover{
   box-shadow: inset 0 -8px 0 #d53b05;
 }
 
+#nav{
+  min-height: 100px;
+}
     
