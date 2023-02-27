@@ -204,7 +204,7 @@ header nav .nav-sections ul > li > ul > li {
     cursor: pointer;
   }
 
-  header nav .nav-sections .nav-drop::after {
+  /* header nav .nav-sections .nav-drop::after {
     content: '';
     display: inline-block;
     position: absolute;
@@ -216,7 +216,7 @@ header nav .nav-sections ul > li > ul > li {
     border: 2px solid currentcolor;
     border-radius: 0 1px 0 0;
     border-width: 2px 2px 0 0;
-  }
+  } */
 
   header nav .nav-sections .nav-drop[aria-expanded=true]::after {
     top: unset;
@@ -296,10 +296,11 @@ ul{
 
 li{
   height: 100%;
-  width: 100px;
+  margin-right: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
+  min-width: 60px;
 }
 
 li:hover{
