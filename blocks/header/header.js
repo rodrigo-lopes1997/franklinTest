@@ -142,8 +142,7 @@ export default async function decorate(block) {
         });
       });
     }
-    const lis = nav.querySelector("li");
-    lis.hover(
+    $("li").hover(
       console.log("HOVER"),
       function () {
         $(this).addClass("result_hover");
