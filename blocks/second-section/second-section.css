@@ -1,0 +1,23 @@
+.second-section{
+    background-color: #81bcb6;
+}
+
+.second-section-wrapper{
+    max-width: 100vw;
+}
+
+.second-section img {
+    max-width: 490px;
+    height: auto;
+}
+
+.second-section p {
+    max-width: 50vw;
+    right: 0;
+    position: absolute !important;
+}
+
+.second-section div {
+ height: 50vh;
+ display: flex;
+}

@@ -15,7 +15,7 @@ header nav {
   align-items: center;
   gap: 0 2em;
   margin: auto;
-  max-width: 1264px;
+  max-width: 100vw;
   height: var(--nav-height);
   padding: 0 1rem;
   font-family: var(--body-font-family);
@@ -32,7 +32,7 @@ header nav[aria-expanded=true] {
 
 @media (min-width: 600px) {
   header nav {
-    padding: 0 2rem;
+    padding: 0 110px;
   }
 }
 
@@ -317,7 +317,7 @@ li:hover{
 }
 
 img{
-  width: 188.25px;
-  height: 77.6px;
+  max-width: 6.25rem;
+  height: auto;
 }
     
