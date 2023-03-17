@@ -1,0 +1,14 @@
+.references-div {
+  padding: 60px 100px 60px 100px;
+}
+
+.references ul {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.references li {
+  padding: 10px 0;
+}

@@ -1,15 +1,14 @@
 export default function decorate(block) {
-  /* console.log(block.children[0].innerText); */
+  /* change to ul, li */
   const ul = document.createElement("ul");
   [...block.children].forEach((row) => {
     const li = document.createElement("li");
     li.innerHTML = row.innerHTML;
-    li.className = "li-second-section";
+    console.log(li);
     [...li.children].forEach((div) => {
-      if (div.children.length === 1 && div.querySelector("picture"))
-        div.className = "second-section-image";
-      else div.className = "second-section-body";
+      div.className = "references-div";
     });
+
     ul.append(li);
   });
 

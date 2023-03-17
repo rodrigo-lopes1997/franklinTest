@@ -1,0 +1,23 @@
+.one-button-centered-section{
+    background-color: #ffcb02;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    margin: 20px 0px;
+}
+
+.one-button-centered-section a {
+    color: white !important;
+    background: #f25e53 !important;
+    padding: 12px 80px !important;
+    border-radius: 10px !important;
+    border: 5px solid #ffcb02 !important;
+}
+
+.one-button-centered-section a:hover{
+    text-decoration: none !important;
+    color: #424242 !important;
+    background: #ffcb02 !important;
+    border: 5px solid #f25e53 !important
+}

@@ -1,8 +1,9 @@
 .second-section{
     background-color: #81bcb6;
+    padding: 0px 100px 0px 100px;
 }
 
-.second-section-wrapper{
+.section > div {
     max-width: 100vw;
 }
 
@@ -13,11 +14,23 @@
 
 .second-section p {
     max-width: 50vw;
-    right: 0;
-    position: absolute !important;
+    line-height: 24px;
 }
 
 .second-section div {
- height: 50vh;
  display: flex;
+}
+
+.li-second-section {
+   justify-content: start;
+}
+
+.li-second-section:hover {
+    box-shadow: unset;
+}
+
+.second-section-body{
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
 }
