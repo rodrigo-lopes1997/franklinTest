@@ -4,7 +4,6 @@ export default function decorate(block) {
   [...block.children].forEach((row) => {
     const li = document.createElement("li");
     li.innerHTML = row.innerHTML;
-    console.log(li);
     [...li.children].forEach((div) => {
       div.className = "references-div";
     });

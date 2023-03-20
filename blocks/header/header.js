@@ -23,7 +23,6 @@ function closeOnEscape(e) {
 }
 
 function openOnKeydown(e) {
-  console.log("HOVERsds");
   const focused = document.activeElement;
   const isNavDrop = focused.className === "nav-drop";
   if (isNavDrop && (e.code === "Enter" || e.code === "Space")) {

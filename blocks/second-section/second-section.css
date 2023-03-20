@@ -1,36 +1,40 @@
-.second-section{
-    background-color: #81bcb6;
-    padding: 0px 100px 0px 100px;
+.second-section {
+  background-color: #81bcb6;
+  padding: 0px 100px 0px 100px;
+}
+
+.second-section li {
+  width: auto;
 }
 
 .section > div {
-    max-width: 100vw;
+  max-width: 100vw;
 }
 
 .second-section img {
-    max-width: 490px;
-    height: auto;
+  max-width: 490px;
+  height: auto;
 }
 
 .second-section p {
-    max-width: 50vw;
-    line-height: 24px;
+  max-width: 50vw;
+  line-height: 24px;
 }
 
 .second-section div {
- display: flex;
+  display: flex;
 }
 
 .li-second-section {
-   justify-content: start;
+  justify-content: start;
 }
 
 .li-second-section:hover {
-    box-shadow: unset;
+  box-shadow: unset;
 }
 
-.second-section-body{
-    display: flex !important;
-    flex-direction: column;
-    justify-content: center;
+.second-section-body {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
 }
